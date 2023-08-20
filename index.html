@@ -26,7 +26,7 @@
       <li class="list-group-item">Item 2</li>
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
-      <!-- <li>Item 5</li> -->
+      <li>Item 5</li>
     </ul>
    </div>
   </div>
@@ -123,6 +123,7 @@
     // console.log(itemList.children) //it doesn't consider entre as text
     // itemList.children[2].style.color="lime"
     itemList.lastElementChild.style.background="yellow"
+    itemList.lastElementChild.classList.add('list-group-item');
     // itemList.firstElementChild.textContent='changed using textcontent'
 
   //here firstchild is enter and first element child is item1
