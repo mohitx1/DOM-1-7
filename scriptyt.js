@@ -73,3 +73,5 @@ function filerItem(e){
         }
     })
 }
+
+////element.setAttribute("class", "democlass");
