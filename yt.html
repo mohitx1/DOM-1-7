@@ -310,6 +310,9 @@
         e.preventDefault()
         ////in form submit event we have to use prevent dafault to restricg the default behaviour of the browser
         console.log('Event Type:' + e.type)
+        const inputValue=document.querySelector('#formInput').value
+        output.innerHTML=inputValue
+        output.className='list-group-item'
         
       }
 
