@@ -18,6 +18,11 @@
     <h2 class="title" id="additems">Add Items</h2>
     <form class="form-inline mb-3">
       <input type="text" class="form-control mr-2" id="formInput">
+      <select class="form-control mr-2 float-right">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
       <input type="submit" class="btn btn-dark" value="Submit" id="submitBtn">
     </form>
     <h2 class="title">Items</h2>
@@ -27,10 +32,12 @@
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
       <li>Item 5</li>
-    <div class="" id="output"></div>
     </ul>
+    <div id="output"></div>
     <br>
     <button class="btn btn-dark btn-black" id="button">click</button>
+    <br>
+    <div id='greenBox' style="width:400px; height: 200px; background-color:lime"><h3>This is text</h3></div>
    </div>
   </div>
 
@@ -205,8 +212,85 @@
 //     console.log(li)
 // }
 
-      const button = document.querySelector('#submitBtn'); 
-      button.addEventListener('click', buttonClicked);
+      // const clickBtn = document.querySelector('#button'); 
+      // clickBtn.addEventListener('click', buttonClicked);
+
+      // function buttonClicked(e){
+        // e.preventDefault() //not used because thsi is not a form type just a button
+        // console.log(1)
+        // console.log(e.target.id)
+        // console.log(e.target.classList)
+        // console.log(e)////important
+        // console.log(e.target.className)
+        // const output=document.getElementById('output')
+        // output.innerHTML=e.target.id
+        // console.log(e.clientY)
+        // console.log(e.clientX) ////client is from the document (browser position) of that click
+        // console.log(e.offsetX)
+        // console.log(e.offsetY)////offset is used the find the position inside the element itself here click button is the element
+        // console.log(e.shiftKey)
+        // console.log(e.altKey)
+        // console.log(e.ctrlKey)////keys pressed along
+        ////innerText,innerHTML,textContent
+        // document.getElementById('header-title').textContent='hey'
+        // document.getElementById('main').style.background='red'
+      // }
+
+
+      //////MOUSE EVENTS
+
+      // const clickBtn = document.querySelector('#button'); 
+      // // clickBtn.addEventListener('click', runEvent);
+      // // clickBtn.addEventListener('dblclick', runEvent);
+      // // clickBtn.addEventListener('mousedown', runEvent);
+      // // clickBtn.addEventListener('mouseup', runEvent); ////when unpress the mouse button it will be triggered
+
+      // function runEvent(e){
+      //   console.log('Event Type:' + e.type)
+      // }
+
+      // const box=document.getElementById('greenBox');
+       const outputText=document.getElementById('output')
+
+      // // box.addEventListener('mouseenter', eventRun);
+      // // box.addEventListener('mouseleave', eventRun); ////this will be triggered when you enter or leave only container
+
+      // // box.addEventListener('mouseover', eventRun);
+      // // box.addEventListener('mouseout', eventRun);////this will be trigerd also when you enter your text area as well as the container area
+
+      // box.addEventListener('mousemove', eventRun);
+
+      // function eventRun(e){
+      //   console.log('Event Type:' + e.type)
+      //   output.innerHTML='<h3>MouseX:' + e.offsetX + '</h3><h3>MouseY:'+e.offsetY+'</h3>';
+      //   box.style.background='rgb('+e.offsetX+','+e.offsetY+',40)'
+      // }
+
+      var itemInput=document.querySelector('input[type="text"]');
+      var form=document.querySelector('form');
+
+      // itemInput.addEventListener('keydown',newEvent);
+      // itemInput.addEventListener('keyup',newEvent);
+      // itemInput.addEventListener('keypress',newEvent);
+      // itemInput.addEventListener('focus',newEvent);
+      // itemInput.addEventListener('blur',newEvent);
+      // itemInput.addEventListener('cut',newEvent);
+      // itemInput.addEventListener('paste',newEvent);
+      // itemInput.addEventListener('input',newEvent);
+      ////fires up whatever you do to the input box type,cut,paste,delete
+
+      
+
+      function newEvent(e){
+        // e.preventDefault();////this will be never used here as this wil prevent the behaviour to output value typed
+        // console.log(e.target.value)
+        // outputText.innerHTML='<h4>'+e.target.value+'</h4>'
+        ////after cut and paste event
+        console.log('Event Type:' + e.type)
+        ////// document.body.style.display='none'
+
+      }
+
 
       
 
