@@ -302,6 +302,18 @@
       // }
 
 
+      // const form=document.querySelector('form')
+
+      form.addEventListener('submit',submitEvent)
+
+      function submitEvent(e){
+        e.preventDefault()
+        ////in form submit event we have to use prevent dafault to restricg the default behaviour of the browser
+        console.log('Event Type:' + e.type)
+        
+      }
+
+
       
 
 
