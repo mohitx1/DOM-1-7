@@ -189,7 +189,7 @@
 
     
 
-    const submitBtn = document.querySelector('#submitBtn'); // Assuming the form's id is 'submitBtn'
+    const submitBtn = document.querySelector('#submitBtn'); 
 
     submitBtn.addEventListener('click', addItems);
 
@@ -199,7 +199,7 @@
     
 
     function addItems(e) {
-    e.preventDefault(); // Corrected typo in function name
+    e.preventDefault(); 
     // console.log(1);
     const inputValue=document.querySelector('#formInput').value;
     const li = document.createElement('li');
